@@ -5,11 +5,11 @@ const dbConfig = config.get('db');
 
 export const typeORMConfig: TypeOrmModuleOptions = {
   type: 'postgres',
-  host: 'host',
+  host: 'localhost',
   port: 5432,
   username: 'postgres',
-  password: 'postgres',
+  password: '1234',
   database: 'board-app',
   entities: [__dirname + '/../**/*.entity.{js,ts}'],
-  synchronize: dbConfig.synchronize,
+  synchronize: true,
 };
