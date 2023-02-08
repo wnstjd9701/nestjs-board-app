@@ -1,3 +1,4 @@
+// DTO - Data Transfer Object
 import { IsNotEmpty } from 'class-validator';
 
 export class CreateBoardDto {
